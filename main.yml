@@ -1,0 +1,8 @@
+---
+# This file initiate the playbook
+- hosts: all
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - zabbix_server_apache_mysql
